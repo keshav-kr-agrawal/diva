@@ -33,7 +33,7 @@ const Home = () => {
               Proudly based in Bhopal, delivering our elegant creations Pan India.
             </p>
             <div className="hero-actions">
-              <Link to="/professional" className="btn-primary">
+              <Link to="/collections" className="btn-primary">
                 Explore Collection <ArrowRight size={20} />
               </Link>
               <div className="hero-badge">

@@ -25,6 +25,7 @@ const Navbar = () => {
 
         <div className="desktop-links">
           <NavLink to="/" className={({isActive}) => isActive ? 'nav-link active' : 'nav-link'}>Home</NavLink>
+          <NavLink to="/collections" className={({isActive}) => isActive ? 'nav-link active' : 'nav-link'}>Collections</NavLink>
           <NavLink to="/story" className={({isActive}) => isActive ? 'nav-link active' : 'nav-link'}>Our Story</NavLink>
           <NavLink to="/professional" className={({isActive}) => isActive ? 'nav-link active' : 'nav-link'}>Professional</NavLink>
         </div>
@@ -37,6 +38,7 @@ const Navbar = () => {
       {/* Mobile Menu */}
       <div className={`mobile-menu ${mobileOpen ? 'open' : ''}`}>
         <NavLink to="/" className="mobile-link" onClick={() => setMobileOpen(false)}>Home</NavLink>
+        <NavLink to="/collections" className="mobile-link" onClick={() => setMobileOpen(false)}>Collections</NavLink>
         <NavLink to="/story" className="mobile-link" onClick={() => setMobileOpen(false)}>Our Story</NavLink>
         <NavLink to="/professional" className="mobile-link" onClick={() => setMobileOpen(false)}>Professional</NavLink>
       </div>
