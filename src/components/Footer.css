@@ -1,0 +1,113 @@
+.footer-container {
+  position: relative;
+  background-color: #fcebeb; /* Light soft pink base */
+  padding: 80px 0 0 0;
+  overflow: hidden;
+  border-top: 1px solid var(--surface-border);
+  margin-top: 80px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5%;
+  position: relative;
+  z-index: 10;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 50px;
+  margin-bottom: 60px;
+}
+
+.footer-brand h3 {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+  font-weight: 800;
+}
+
+.brand-subtitle {
+  color: var(--text-secondary);
+  font-size: 1.15rem;
+}
+
+.location-text {
+  color: var(--accent);
+  margin-top: 15px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-conditions h4, .footer-contact h4 {
+  font-size: 1.4rem;
+  margin-bottom: 24px;
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
+.footer-conditions ul {
+  list-style: none;
+}
+
+.footer-conditions li {
+  margin-bottom: 15px;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.1rem;
+}
+
+.footer-conditions li::before {
+  content: "♥";
+  color: var(--accent);
+  font-size: 1rem;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--text-primary);
+  font-weight: 500;
+  transition: all 0.3s ease;
+  font-size: 1.15rem;
+  padding: 10px 0;
+}
+
+.social-btn:hover {
+  color: var(--accent);
+  transform: translateX(8px);
+}
+
+.watermark-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: clamp(150px, 22vw, 320px);
+  overflow: hidden;
+  position: relative;
+  pointer-events: none;
+}
+
+.watermark-text {
+  font-size: 38vw; /* Very large text */
+  font-weight: 800;
+  line-height: 0.72;
+  color: rgba(210, 110, 128, 0.25); /* Properly visible soft pink */
+  transform: translateY(22%); /* Embedded correctly down but clearly visible */
+  letter-spacing: -0.06em;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}

@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --bg-color: #faf5f5; /* Beautiful blush white */
+  --text-primary: #3a2e2e; /* Warm dark brown */
+  --text-secondary: #8c7b7b;
+  --accent: #d26e80; /* Elegant rose pink */
+  --accent-hover: #b85a6a;
+  --surface: rgba(255, 255, 255, 0.7);
+  --surface-border: rgba(210, 110, 128, 0.2);
+  --glass-shadow: 0 10px 40px rgba(210, 110, 128, 0.08);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(210, 110, 128, 0.08) 0%, transparent 60%),
+    radial-gradient(circle at 90% 80%, rgba(210, 110, 128, 0.05) 0%, transparent 60%);
+  color: var(--text-primary);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.glass {
+  background: rgba(250, 245, 245, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--surface-border);
+}
+
+.glass-card {
+  background: var(--surface);
+  border: 1px solid var(--surface-border);
+  backdrop-filter: blur(20px);
+  border-radius: 24px;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: var(--glass-shadow);
+}
+
+.glass-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(210, 110, 128, 0.4);
+  box-shadow: 0 20px 50px rgba(210, 110, 128, 0.15);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #e58b9b, #d26e80);
+  color: #fff;
+  padding: 16px 40px;
+  border: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: 0 10px 20px rgba(210, 110, 128, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(210, 110, 128, 0.4);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #d26e80, #b85a6a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
