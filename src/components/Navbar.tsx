@@ -16,10 +16,10 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`navbar ${scrolled ? 'nav-scrolled glass' : ''}`}>
+    <nav className={`navbar ${scrolled ? 'nav-scrolled' : ''}`}>
       <div className="nav-container">
         <NavLink to="/" className="nav-logo" onClick={() => setMobileOpen(false)}>
-          <img src="/public/assets/logo.jpg" alt="Design Diva" className="logo-img" />
+          <img src="/assets/logo.jpg" alt="Design Diva" className="logo-img" />
           <span className="gradient-text">Design Diva</span>
         </NavLink>
 
